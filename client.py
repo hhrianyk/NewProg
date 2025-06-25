@@ -18,7 +18,7 @@ client_socket.connect(("localhost",12346))
 
 client_socket.send(name.encode())
 response=client_socket.recv(1024).decode()
-print("Відповідь від сервера", response)
+print("Відповідь від сервера", response)#Супер комент
 
 threading.Thread(target=send_message).start()
 
